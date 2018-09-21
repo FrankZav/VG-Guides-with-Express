@@ -1,0 +1,25 @@
+extends layout
+
+block content
+
+  h1 Author: #{author.name}
+  p #{author.lifespan}
+  
+  div(style='margin-left:20px;margin-top:20px')
+
+    h4 Guidea
+    
+    dl
+    each guides in author_guides
+      dt 
+        a(href=guides.url) #{guides.title}
+      dd #{guides.summary}
+
+    else
+      p This user has no guides.
+      
+  hr
+  p
+    a(href=author.url+'/delete') Delete author
+  p
+    a(href=author.url+'/update') Update author

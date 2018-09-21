@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1 #{title}: #{guide.title}
+  
+  p #[strong Author:] 
+    a(href=guide.author.url) #{guide.author.name}
+  p #[strong Summary:] #{guide.summary}
+  p #[strong Genre:] 
+    each val in guide.genre
+      a(href=val.url) #{val.name}
+      |, 
+      
+  hr
+  p
+    a(href=guide.url+'/update') Update Guide

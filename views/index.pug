@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #[em Video Game Guide Repository]
+
+
+  h1 Hosted Guides
+
+  if error
+    p Error Retrieving guide statistics
+  else
+
+    p We are hosting the following number of guides:
+
+    ul
+      li #[strong Guides:] !{data.guide_count}
+      li #[strong Authors:] !{data.author_count}
+      li #[strong Genres:] !{data.genre_count}
