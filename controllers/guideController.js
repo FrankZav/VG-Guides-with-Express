@@ -54,33 +54,3 @@ exports.guide_detail = function(req, res) {
         res.render('guide_detail', { title: 'Guide On', guide:  results.guide} );
     });
 };
-
-// Display guide create form on GET.
-exports.guide_create_get = function(req, res) {
-    res.send('NOT IMPLEMENTED: guide create GET');
-};
-
-// Handle guide create on POST.
-exports.guide_create_post = function(req, res) {
-    res.send('NOT IMPLEMENTED: guide create POST');
-};
-
-// Display guide delete form on GET.
-exports.guide_delete_get = function(req, res) {
-    res.send('NOT IMPLEMENTED: guide delete GET');
-};
-
-// Handle guide delete on POST.
-exports.guide_delete_post = function(req, res) {
-    res.send('NOT IMPLEMENTED: guide delete POST');
-};
-
-// Display guide update form on GET.
-exports.guide_update_get = function(req, res) {
-    res.send('NOT IMPLEMENTED: guide update GET');
-};
-
-// Handle guide update on POST.
-exports.guide_update_post = function(req, res) {
-    res.send('NOT IMPLEMENTED: guide update POST');
-};
