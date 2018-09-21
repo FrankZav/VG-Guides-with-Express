@@ -40,23 +40,3 @@ exports.genre_detail = function(req, res, next) {
     });
 
 };
-// Display Genre create form on GET.
-exports.genre_create_get = function(req, res) {
-    res.render('genre_form', { title: 'Create Genre'});
-};
-
-// Handle Genre create on POST.
-exports.genre_create_post = function(req, res) {
-    res.send('NOT IMPLEMENTED: Genre create POST');
-};
-
-
-// Display Genre update form on GET.
-exports.genre_update_get = function(req, res) {
-    res.send('NOT IMPLEMENTED: Genre update GET');
-};
-
-// Handle Genre update on POST.
-exports.genre_update_post = function(req, res) {
-    res.send('NOT IMPLEMENTED: Genre update POST');
-};
